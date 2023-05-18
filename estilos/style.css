@@ -1,0 +1,147 @@
+/* Variáveis CSS */
+:root {
+  --cor-de-fundo: #000000;
+  --cor-azul: #22d4fd;
+  --cor-branco: #ffffff;
+  --cor-hover: #272727;
+}
+
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-branco);
+}
+
+.destaque {
+  color: var(--cor-azul);
+}
+
+/* Definindo o container como display flex */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8% 10%;
+  gap: 82px;
+}
+
+/* Definindo tamanho do conteúdo */
+.container-conteudo {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Definindo tamanho do título */
+.container-titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 2.25rem;
+}
+
+/* Definindo o tamanho do parágrafo */
+.container-paragrafo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Posicionando os links */
+.container-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Estilizando so links */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 600;
+  width: 31.5rem;
+  padding: 15px 0px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--cor-azul);
+  border-radius: 8px;
+  color: var(--cor-branco);
+}
+
+.links:hover {
+  background-color: var(--cor-hover);
+}
+
+/* Estilizando o subtitulo da div de links */
+.container-subtitulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* Estilização do radapé */
+.rodape {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: var(--cor-de-fundo);
+  background-color: var(--cor-azul);
+  text-align: center;
+  padding: 10px 5px;
+}
+
+/* Estilização do cabeçaho e links*/
+nav {
+  display: flex;
+  gap: 5rem;
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 10%;
+}
+
+.cabecalho-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--cor-azul);
+  text-decoration: none;
+}
+
+/* Alterando largura imagem */
+.container-img {
+  width: 50%;
+}
+
+/* Responsividade com Media Queries */
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabecalho-menu {
+    justify-content: center;
+  }
+
+  .cabecalho-link {
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .container-conteudo {
+    width: auto;
+  }
+}
